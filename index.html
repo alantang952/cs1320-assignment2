@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Noodle Tweets</title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+	</head>
+	<body tabindex=3>
+		<a href="#content" class="skip">Skip to content</a>
+		<div class="menuBar">
+			<div class="logoWrapper">
+				<div>Noodle Tweets</div>
+			</div>
+		</div>
+		<div class="content" id = "content">
+			<div id="inputs">
+				<input id="searchBar" type="search" placeholder="Search in tweets" tabindex=1>
+				<br>
+				<br>
+				<input type="checkbox" onchange='handleChange(this);' id="paused" tabindex=2>
+				<label for="pausing"> Pause Tweet Collection</label>
+			</div>
+			
+			<div id = "tweet-container">
+				
+			</div>
+		</div>
+		<!-- load script after body elements, feel free to play around with this -->
+		<script type="text/javascript" src="index.js"></script>
+	</body>
+</html>
